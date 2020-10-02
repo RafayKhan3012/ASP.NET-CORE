@@ -1,0 +1,6 @@
+ "ConnectionStrings": {
+    "DefaultConnection": "Server=DESKTOP-IEEGDH1;Database=LocalDB;Trusted_Connection=True;MultipleActiveResultSets=True"
+  },
+  
+  
+Services= services.AddDbContext<LocalDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
